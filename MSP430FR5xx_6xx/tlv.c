@@ -130,7 +130,7 @@ uint16_t TLV_getPeripheral(uint8_t tag,
         // adjust point to first address of Peripheral
         pPDTAG += count*2;
         // set counter back to 0
-        count = 0;
+        //count = 0;
         // align pcount for work comparision
         pcount *= 2;
 
@@ -185,7 +185,7 @@ uint8_t TLV_getInterrupt(uint8_t tag)
         // adjust point to first address of Peripheral
         pPDTAG += (pcount + count) * 2;
         // set counter back to 0
-        count = 0;
+        //count = 0;
 
         // TLV access Function Call
         for (count = 0; count <= tag; count += 2)
